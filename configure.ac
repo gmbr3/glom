@@ -259,7 +259,7 @@ AX_BOOST_BASE
 AX_BOOST_PYTHON
 
 # Check that ax_boost_python.m4 found something.
-# It also defines HAVE_BOOST_PYTHON, but only as a C define for 
+# It also defines HAVE_BOOST_PYTHON, but only as a C define for
 AS_IF([test -z "$BOOST_PYTHON_LIB"],
   [AC_MSG_ERROR([Cannot find the Boost::Python library.])])
 
@@ -360,7 +360,7 @@ AC_DEFINE_UNQUOTED([GLOM_MSGFMT], ["$GLOM_MSGFMT"],
 # Code testing coverage with gcov
 AC_MSG_CHECKING(whether to build with gcov testing)
 AC_ARG_ENABLE(gcov, AS_HELP_STRING([--enable-gcov], [Whether to enable gcov testing]),, enable_gcov=no)
-			
+
 if test "x$enable_gcov" = "xyes"; then
   if test "$GCC" = "no"; then
     AC_MSG_ERROR(not compiling with gcc, which is required for gcov testing)
