@@ -181,7 +181,7 @@ AS_IF([test "x$glom_enable_client_only" != xyes],
       [REQUIRED_GLOM_LIBS="$REQUIRED_GLOM_LIBS gtksourceviewmm-4.0 >= 3.18.0"])
 
 AS_IF([test "x$glom_enable_sqlite" = xyes],
-      [REQUIRED_GLOM_LIBS="$REQUIRED_GLOM_LIBS libgda-sqlite-5.0"])
+      [REQUIRED_GLOM_LIBS="$REQUIRED_GLOM_LIBS libgda-sqlite-6.0"])
 
 #TODO: Remove this check, because we checked again later anyway,
 #because we add REQUIRED_LIBGLOM_LIBS to REQUIRED_GLOM_LIBS?
